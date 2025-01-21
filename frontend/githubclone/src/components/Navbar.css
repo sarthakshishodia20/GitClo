@@ -1,0 +1,75 @@
+/* Navbar Styling */
+nav {
+    /* border-bottom:2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a506720; /* Light dark background color */
+    border-bottom: 3px solid rgb(255, 255, 255); /* Green bottom border */
+    padding: 8px 20px; /* Decreased height with smaller padding */
+    color: white;
+    width: 100%; /* Full width for the navbar */
+}
+
+nav div h3{
+    color: rgba(255, 103, 1, 0.703);
+    padding-left: 1rem;
+    font-size: 24px;
+}
+
+/* Logo and text styling */
+nav img {
+    height: 80px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+nav img:hover {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+
+nav div p{
+    color: rgb(7, 48, 255);
+    font-size: 20px;
+    border:1px solid grey;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+nav div p:hover{
+    border:1px solid white;
+    cursor: pointer;
+
+}
+nav h3, nav p {
+    margin-left: 20px; /* Adjust spacing for title and paragraph */
+    color: white;
+}
+
+/* Center-align text in the navbar */
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+/* Right-align text */
+nav h3, p {
+    margin-left: auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav img {
+        margin-bottom: 10px;
+    }
+
+    nav h3, nav p {
+        margin-left: 0;
+    }
+}
